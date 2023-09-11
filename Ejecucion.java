@@ -1,4 +1,5 @@
 package examen1;
+import java.util.Scanner;
 
 public class Ejecucion {
     public void iniciarPrograma() {
@@ -19,7 +20,19 @@ public class Ejecucion {
             palabrasObjeto2.vocalesMayuscula();
             boolean Palindromo1 = palabrasObjeto2.Palindromo();
             System.out.println("Es Palíndromo: " + Palindromo1);
+            
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("¿Desea ejecutar el método FizzBuzz? (Sí/No)");
+            String respuesta = scanner.nextLine();
+
+            if (respuesta.equalsIgnoreCase("Si")) {
+                Extra extra = new Extra();
+                extra.fizzBuzz();
+            } else {
+                System.out.println("No se ejecutará el método FizzBuzz.");
+            }
         }
-        Extra extraObjeto = new Extra();
     }
+        
+    
 
