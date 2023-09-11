@@ -29,7 +29,7 @@ public class Ejecucion {
                 Extra extra = new Extra();
                 extra.fizzBuzz();
             } else {
-                System.out.println("No se ejecutará el método FizzBuzz.");
+                System.out.println("Elegiste No.");
             }
         }
     }
